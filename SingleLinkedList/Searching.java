@@ -1,16 +1,5 @@
 package SingleLinkedList;
 
-import java.util.Scanner;
-
-// class Node {
-//     int data;
-//     Node next;
-
-//     public Node(int data) {
-//         this.data = data;
-//     }
-// }
-
 class LinkedList extends InsertionOperations {
 
     // Searching an element in a singly linked list.
