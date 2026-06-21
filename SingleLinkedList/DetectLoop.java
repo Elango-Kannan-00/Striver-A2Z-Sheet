@@ -29,7 +29,7 @@ class LoopFinding extends InsertionOperations {
     //     Node slow = head;
     //     Node fast = head;
 
-    //     while (slow.next != null && fast.next != null) {
+    //     while (fast != null && fast.next != null) {
     //         slow = slow.next;
     //         fast = fast.next.next;
 
