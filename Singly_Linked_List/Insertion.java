@@ -53,11 +53,11 @@ class InsertionOperations {
         Node newNode = createNode(data);
 
         // Edge cases.
-        if (K < 0 || K > getSize()+1) {
+        if (K < 0 || K > getSize() + 1) {
             System.out.println("Invalid position!");
             return null;
         }
-        
+
         // If position is 1, then the newnode will be inserted immediately after head.
         if (K == 1) {
             return insertAtFirst(data);
@@ -65,7 +65,7 @@ class InsertionOperations {
 
         // Setting up the new node at Kth position.
         Node current = head;
-        for (int i=1; i<K-1 && current != null; i++) {
+        for (int i = 1; i < K - 1 && current != null; i++) {
             current = current.next;
         }
         newNode.next = current.next;
@@ -100,9 +100,9 @@ class InsertionOperations {
 }
 
 public class Insertion {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         InsertionOperations obj = new InsertionOperations();
-        
+
         // Add element.
         obj.insertAtFirst(1);
 
@@ -118,5 +118,5 @@ public class Insertion {
         obj.insertAtKposition(2, 2);
         obj.display();
 
-    }    
+    }
 }

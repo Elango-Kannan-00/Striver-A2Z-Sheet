@@ -1,6 +1,6 @@
 package Singly_Linked_List;
 
-class LinkedListReverse extends InsertionOperations{
+class LinkedListReverse extends InsertionOperations {
     public Node reverseList() {
         // Declaring pointers for reversal.
         Node current = head;
@@ -22,7 +22,7 @@ class LinkedListReverse extends InsertionOperations{
         // So, when we return head, it only gives output as 10 -> null.
         // To avoid this, the prev pointer is assigned to head, because the prev pointer
         // will have the head of all the elements.
-        // Note: The display method consumes current pointer, which is assigned to head. 
+        // Note: The display method consumes current pointer, which is assigned to head.
         // So that, here we re-assigned the prev as head.
         head = prev;
         return head;
@@ -46,6 +46,6 @@ public class Reverse {
         obj.reverseList();
         System.out.println("After reverse: ");
         obj.display();
-    
+
     }
 }

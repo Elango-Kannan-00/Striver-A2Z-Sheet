@@ -5,7 +5,7 @@ class LinkedList extends InsertionOperations {
     // Searching an element in a singly linked list.
     public void searching(int data) {
         Node current = head;
-        
+
         boolean isFound = false;
         int result = 0;
         while (current.next != null) {
@@ -27,7 +27,7 @@ class LinkedList extends InsertionOperations {
 }
 
 public class Searching extends InsertionOperations {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         LinkedList obj = new LinkedList();
 

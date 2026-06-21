@@ -13,7 +13,8 @@ class StartFinding extends InsertionOperations {
         Node slow = head;
         Node fast = head;
 
-        // Floyd's cycle to find, if there any loop exist. Because, starting pointing is created only if there
+        // Floyd's cycle to find, if there any loop exist. Because, starting pointing is
+        // created only if there
         // any loop in the Linked list.
         while (fast != null && fast.next != null) {
             slow = slow.next;

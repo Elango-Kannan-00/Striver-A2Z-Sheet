@@ -19,34 +19,34 @@ class LoopFinding extends InsertionOperations {
             set.add(current);
             current = current.next;
         }
-        return false;        
+        return false;
     }
 
-    // Another method to find the loop in LL. 
+    // Another method to find the loop in LL.
     // Time complexity - O(N), Space complexity - O(1);
 
     // public boolean detectLoop() {
-    //     Node slow = head;
-    //     Node fast = head;
+    // Node slow = head;
+    // Node fast = head;
 
-    //     while (fast != null && fast.next != null) {
-    //         slow = slow.next;
-    //         fast = fast.next.next;
+    // while (fast != null && fast.next != null) {
+    // slow = slow.next;
+    // fast = fast.next.next;
 
-    //         if (slow == fast) {
-    //             return true;
-    //         }
-    //     }
+    // if (slow == fast) {
+    // return true;
+    // }
+    // }
 
-    //     return false;
-    //}
+    // return false;
+    // }
 }
 
 public class Detect_Loop {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         LoopFinding obj = new LoopFinding();
-        
+
         obj.insertAtEnd(10);
         obj.insertAtEnd(20);
         obj.insertAtEnd(30);
@@ -56,8 +56,10 @@ public class Detect_Loop {
         obj.insertAtEnd(70);
 
         boolean result = obj.detectLoop();
-        if (result) System.out.println("Loop detected!");
-        else System.out.println("No Loop detected!");
-        
+        if (result)
+            System.out.println("Loop detected!");
+        else
+            System.out.println("No Loop detected!");
+
     }
 }

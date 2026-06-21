@@ -24,21 +24,21 @@ class Middle extends InsertionOperations {
     // This method will return the first middle element if the number of elements
     // in the linked list is even in number.
     // public int findMiddle() {
-    //     // Slower pointer
-    //     Node slow = head;
-    //     // Fast pointer
-    //     Node fast = head.next;
+    // // Slower pointer
+    // Node slow = head;
+    // // Fast pointer
+    // Node fast = head.next;
 
-    //     while (fast != null && fast.next != null) {
-    //         fast = fast.next.next;
-    //         slow = slow.next;
-    //     }
-    //     return slow.data;
+    // while (fast != null && fast.next != null) {
+    // fast = fast.next.next;
+    // slow = slow.next;
+    // }
+    // return slow.data;
     // }
 }
 
 public class Middle_Element {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Middle obj = new Middle();
 
         obj.insertAtEnd(10);

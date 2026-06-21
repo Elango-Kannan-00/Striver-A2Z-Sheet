@@ -34,13 +34,13 @@ class DeletionOperations extends InsertionOperations {
     // 3. Delete at Kth position.
     public Node deleteAtKPosition(int K) {
         // Edge cases.
-        if (K < 1  || K > getSize() + 1) {
+        if (K < 1 || K > getSize() + 1) {
             System.out.println("Invalid delete operation. Error: Null");
             return head;
         }
 
         Node current = head;
-        for (int i=1; i<K-1; i++) {
+        for (int i = 1; i < K - 1; i++) {
             current = current.next;
         }
         current.next = current.next.next;
