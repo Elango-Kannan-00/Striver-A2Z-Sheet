@@ -1,4 +1,4 @@
-package SingleLinkedList;
+package Singly_Linked_List;
 
 class InsertionOperations {
     Node head = null;

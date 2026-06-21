@@ -1,4 +1,4 @@
-package SingleLinkedList;
+package Singly_Linked_List;
 
 class Middle extends InsertionOperations {
 
