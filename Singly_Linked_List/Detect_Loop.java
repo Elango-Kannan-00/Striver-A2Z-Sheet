@@ -42,7 +42,7 @@ class LoopFinding extends InsertionOperations {
     //}
 }
 
-public class DetectLoop {
+public class Detect_Loop {
     public static void main (String[] args) {
 
         LoopFinding obj = new LoopFinding();

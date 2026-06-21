@@ -26,7 +26,7 @@ class Length extends InsertionOperations {
     }
 }
 
-public class LengthOfLoop {
+public class Length_Of_Loop {
     public static void main(String[] args) {
 
         Length obj = new Length();

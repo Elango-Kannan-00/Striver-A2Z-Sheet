@@ -37,7 +37,7 @@ class Middle extends InsertionOperations {
     // }
 }
 
-public class MiddleElement {
+public class Middle_Element {
     public static void main (String[] args) {
         Middle obj = new Middle();
 
