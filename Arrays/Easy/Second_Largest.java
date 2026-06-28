@@ -1,4 +1,4 @@
-package Arrays.Easy;
+8package Arrays.Easy;
 
 /*
 
@@ -82,7 +82,7 @@ public class Second_Largest {
             }
         }
 
-        if (secondSmallest == Integer.MIN_VALUE && smallest == Integer.MIN_VALUE) {
+        if (secondSmallest == Integer.MAX_VALUE && smallest == Integer.MAX_VALUE) {
             System.out.println("-1");
         } else {
             System.out.println(secondSmallest);
