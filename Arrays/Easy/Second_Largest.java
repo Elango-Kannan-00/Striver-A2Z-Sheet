@@ -1,4 +1,4 @@
-8package Arrays.Easy;
+package Arrays.Easy;
 
 /*
 
