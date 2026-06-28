@@ -8,9 +8,9 @@ Output: [1,3,5,2,4]
 */
 
 class Odd_Even extends InsertionOperations {
-    public static Node oddEvenIndexing() {
+    public Node oddEvenIndexing() {
         Node odd = head;
-        Node even = head;
+        Node even = head.next;
         Node evenHead = even;
 
         while (even != null && even.next != null) {
@@ -39,8 +39,9 @@ public class Odd_Even_Indexing {
         obj.insertAtEnd(60);
         obj.insertAtEnd(70);
 
-        int result = obj.oddEvenIndexing();
-        System.out.println(result);
+        obj.display();
+        obj.oddEvenIndexing();
+        obj.display();
     }
 
 }
