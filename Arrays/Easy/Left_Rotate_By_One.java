@@ -26,7 +26,7 @@ Rotating once to the left results in nums = [0, 3, 6, -1].
 */
 
 public class Left_Rotate_By_One {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter the size of array: ");
@@ -48,11 +48,11 @@ public class Left_Rotate_By_One {
         // Storing first value.
         int first = array[0];
         // Left shifting all elements.
-        for (int i=1; i<N; i++) {
-            array[i-1] = array[i];
+        for (int i = 1; i < N; i++) {
+            array[i - 1] = array[i];
         }
         // Placing the first element at last.
-        array[N-1] = first;
+        array[N - 1] = first;
 
         System.out.println("After Left roate by one: " + Arrays.toString(array));
     }
