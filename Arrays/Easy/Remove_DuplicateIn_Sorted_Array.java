@@ -16,7 +16,7 @@ Therefore return 4 after assigning [1,2,3,4] in the beginning of the array.
 */
 
 public class Remove_DuplicateIn_Sorted_Array {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter the size of array: ");
@@ -30,27 +30,28 @@ public class Remove_DuplicateIn_Sorted_Array {
 
         int result = removeDuplicate(array, N);
 
-        for (int i=0; i<result; i++) {
+        for (int i = 0; i < result; i++) {
             System.out.print(array[i] + " ");
         }
 
-        scan.close();   
+        scan.close();
     }
 
     public static int removeDuplicate(int[] array, int N) {
 
         // First pointer, point at the first element.
-        int i=0;
+        int i = 0;
         // Second pointer moves one by one and compares with i.
-        for (int j=1; j<N; j++) {
+        for (int j = 1; j < N; j++) {
             if (array[j] != array[i]) {
-                // if both pointer's element are not same, then place the 2nd pointer's element near first pointer's element.
+                // if both pointer's element are not same, then place the 2nd pointer's element
+                // near first pointer's element.
                 i++;
-                array[i] = array[j]; 
+                array[i] = array[j];
             }
-        } 
+        }
 
         // returning number of elements. +1 for loop condition.
-        return i+1;
+        return i + 1;
     }
 }
