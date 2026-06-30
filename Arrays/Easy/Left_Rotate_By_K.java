@@ -41,11 +41,11 @@ public class Left_Rotate_By_K {
         K = K % N;
 
         // Reverse the array from frst to K-1 elements.
-        reverseArray(array, 0, K-1);
+        reverseArray(array, 0, K - 1);
         // Then reverse the array from K to N elements.
-        reverseArray(array, K, N-1);
+        reverseArray(array, K, N - 1);
         // Now, reverse all the elements.
-        reverseArray(array, 0, N-1);
+        reverseArray(array, 0, N - 1);
 
         System.out.println("After left rotate by K: " + Arrays.toString(array));
     }
