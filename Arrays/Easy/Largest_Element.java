@@ -23,7 +23,7 @@ Explanation:
 import java.util.Scanner;
 
 public class Largest_Element {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter the size of array: ");
@@ -31,18 +31,18 @@ public class Largest_Element {
 
         System.out.println("Enter the elements of array: ");
         int[] array = new int[N];
-        for (int i=0;i <N; i++) {
+        for (int i = 0; i < N; i++) {
             array[i] = scan.nextInt();
         }
 
         findLargest(array, N);
 
         scan.close();
-    }    
+    }
 
     public static void findLargest(int[] array, int N) {
         int maxElement = array[0];
-        for (int i=1; i<N; i++) {
+        for (int i = 1; i < N; i++) {
             if (array[i] > maxElement) {
                 maxElement = array[i];
             }
