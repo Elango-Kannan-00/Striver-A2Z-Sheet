@@ -46,7 +46,7 @@ public class Linear_Search {
     }
 
     public static void linearSearch(int[] array, int N, int element) {
-        for (int i=0; i<N; i++) {
+        for (int i = 0; i < N; i++) {
             if (array[i] == element) {
                 System.out.println(i);
                 break;
