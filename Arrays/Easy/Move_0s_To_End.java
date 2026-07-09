@@ -18,7 +18,7 @@ are moved to front by maintaining order
 */
 
 public class Move_0s_To_End {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter the size of array: ");
@@ -38,7 +38,7 @@ public class Move_0s_To_End {
 
     public static void moveZerosToEnd(int[] array, int N) {
         int count = 0;
-        for (int i=0; i<N; i++) {
+        for (int i = 0; i < N; i++) {
             if (array[i] != 0) {
                 int temp = array[i];
                 array[i] = array[count];
