@@ -41,9 +41,9 @@ public class Check_Array_Sort {
 
         boolean isSorted = true;
         for (int i = 1; i < N; i++) {
-            if (array[i] < array[i - 1])  // If any element is smaller than the previous one, then break.
+            if (array[i] < array[i - 1]) // If any element is smaller than the previous one, then break.
                 isSorted = false;
-                break;
+            break;
         }
 
         if (isSorted) {
