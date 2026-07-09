@@ -29,7 +29,7 @@ Therefore, there is no second smallest or second largest element present.
 import java.util.Scanner;
 
 public class Second_Largest {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter the size of array: ");
@@ -37,7 +37,7 @@ public class Second_Largest {
 
         System.out.println("Enter the elements of array: ");
         int[] array = new int[N];
-        for (int i=0;i <N; i++) {
+        for (int i = 0; i < N; i++) {
             array[i] = scan.nextInt();
         }
 
@@ -52,11 +52,13 @@ public class Second_Largest {
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
 
-        for (int i=0; i<N; i++) {
+        for (int i = 0; i < N; i++) {
             if (array[i] > largest) {
                 secondLargest = largest;
                 largest = array[i];
-            } else if (array[i] > secondLargest && array[i] != largest) { // This line will check, whether any element is greater than second largest, but lesser than largest.
+            } else if (array[i] > secondLargest && array[i] != largest) { // This line will check, whether any element
+                                                                          // is greater than second largest, but lesser
+                                                                          // than largest.
                 secondLargest = array[i];
             }
         }
@@ -73,11 +75,13 @@ public class Second_Largest {
         int smallest = Integer.MAX_VALUE;
         int secondSmallest = Integer.MAX_VALUE;
 
-        for (int i=0; i<N; i++) {
+        for (int i = 0; i < N; i++) {
             if (array[i] < smallest) {
                 secondSmallest = smallest;
                 smallest = array[i];
-            } else if (array[i] < secondSmallest && array[i] != smallest) { // This line will check, whether any element is smaller than second smallest, but greater than smallest.
+            } else if (array[i] < secondSmallest && array[i] != smallest) { // This line will check, whether any element
+                                                                            // is smaller than second smallest, but
+                                                                            // greater than smallest.
                 secondSmallest = array[i];
             }
         }
