@@ -36,6 +36,7 @@ public class Longest_Subarray_With_Sum_K {
     
     */
 
+    // This method will be suitable for both positive and negative numbers.
     public static void findLongestSubarrayLength(int[] array, int N, int K) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
