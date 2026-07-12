@@ -23,6 +23,19 @@ public class Longest_Subarray_With_Sum_K {
         scan.close();
     }
 
+    /*
+    
+    "Remove the extra" logic
+    Imagine a rope.
+    Total Rope = 25 meters
+    Need = 15 meters
+    How much should you cut from the front?
+    25 - 15 = 10
+    Remove that first 10 meters.
+    Exactly the same logic. 
+    
+    */
+
     public static void findLongestSubarrayLength(int[] array, int N, int K) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
