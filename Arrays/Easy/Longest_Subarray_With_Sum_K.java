@@ -1,4 +1,25 @@
 package Arrays.Easy;
+/*
+
+Example 1:
+Input:
+ nums = [10, 5, 2, 7, 1, 9], k = 15  
+Output:
+ 4  
+Explanation:
+ The longest sub-array with a sum equal to 15 is [5, 2, 7, 1], which has a length of 4. 
+ This sub-array starts at index 1 and ends at index 4, and the sum of its elements 
+ (5 + 2 + 7 + 1) equals 15. Therefore, the length of this sub-array is 4.
+
+Example 2:
+Input:
+ nums = [-3, 2, 1], k = 6  
+Output:
+ 0  
+Explanation:
+ There is no sub-array in the array that sums to 6. Therefore, the output is 0.
+
+*/
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -11,7 +32,7 @@ public class Longest_Subarray_With_Sum_K {
         int N = scan.nextInt();
 
         int[] array = new int[N];
-        for (int i=0; i<N; i++) {
+        for (int i = 0; i < N; i++) {
             array[i] = scan.nextInt();
         }
 
@@ -24,17 +45,17 @@ public class Longest_Subarray_With_Sum_K {
     }
 
     /*
-    
-    "Remove the extra" logic
-    Imagine a rope.
-    Total Rope = 25 meters
-    Need = 15 meters
-    How much should you cut from the front?
-    25 - 15 = 10
-    Remove that first 10 meters.
-    Exactly the same logic. 
-    
-    */
+     * 
+     * "Remove the extra" logic
+     * Imagine a rope.
+     * Total Rope = 25 meters
+     * Need = 15 meters
+     * How much should you cut from the front?
+     * 25 - 15 = 10
+     * Remove that first 10 meters.
+     * Exactly the same logic.
+     * 
+     */
 
     // This method will be suitable for both positive and negative numbers.
     public static void findLongestSubarrayLength(int[] array, int N, int K) {
@@ -76,40 +97,40 @@ public class Longest_Subarray_With_Sum_K {
     // Sliding window method for only positive numbers.
     // Time complexity - O(N)
     // Space complexity - O(1)
-    
+
     /*
-    
-        int n = array.length;
-
-        // To store the maximum length of the subarray
-        int maxLen = 0;
-
-        // Pointers for sliding window
-        int left = 0, right = 0;
-
-        // Sum of the current window
-        int sum = array[0];
-
-        // Traverse through the array
-        while (right < n) {
-
-            // Shrink the window if sum exceeds k
-            while (left <= right && sum > k) {
-                sum -= nums[left];
-                left++;
-            }
-
-            // Update max length if sum equals k
-            if (sum == k) {
-                maxLen = Math.max(maxLen, right - left + 1);
-            }
-
-            // Expand the window to the right
-            right++;
-            if (right < n) {
-                sum += nums[right];
-            }
-        }
-    
-    */
+     * 
+     * int n = array.length;
+     * 
+     * // To store the maximum length of the subarray
+     * int maxLen = 0;
+     * 
+     * // Pointers for sliding window
+     * int left = 0, right = 0;
+     * 
+     * // Sum of the current window
+     * int sum = array[0];
+     * 
+     * // Traverse through the array
+     * while (right < n) {
+     * 
+     * // Shrink the window if sum exceeds k
+     * while (left <= right && sum > k) {
+     * sum -= nums[left];
+     * left++;
+     * }
+     * 
+     * // Update max length if sum equals k
+     * if (sum == k) {
+     * maxLen = Math.max(maxLen, right - left + 1);
+     * }
+     * 
+     * // Expand the window to the right
+     * right++;
+     * if (right < n) {
+     * sum += nums[right];
+     * }
+     * }
+     * 
+     */
 }
