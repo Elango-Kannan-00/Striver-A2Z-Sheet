@@ -49,7 +49,7 @@ public class Longest_Sequence_In_Array {
     // Step 02: If any starting element found, set the count to 1
     // Step 03: Now using while loop, check whether the consecutive elements are present, while updating count.
     // This process repeats until last element. If any longest sequence present, then it updates the count.
-    
+
     public static void longestConsecutive(int[] array, int N) {
         // Hashset to store the array elements.
         HashSet<Integer> set = new HashSet<>();
